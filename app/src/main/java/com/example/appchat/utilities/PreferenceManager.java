@@ -24,10 +24,10 @@ public class PreferenceManager {
         editor.putString(key, value);
         editor.apply();
     }
-    private String getString(String key){
+    public String getString(String key){
         return sharedPreferences.getString(key,null);
     }
-    private void clear(){
+    public void clear(){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.clear();
         editor.apply();
