@@ -10,7 +10,6 @@ public class MessagingService extends FirebaseMessagingService {
     @Override
     public void onNewToken(@NonNull String token){
         super.onNewToken(token);
-
     }
     @Override
     public void onMessageReceived(@NonNull RemoteMessage remoteMessage) {
